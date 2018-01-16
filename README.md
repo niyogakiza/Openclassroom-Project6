@@ -27,4 +27,4 @@ The player can choose to attack or defend against the next shot
 If the player chooses to defend themselves, they sustain 50% less damage than normal
 
 As soon as the life points of a player (initially 100) falls to 0, they lose. A message appears and the game is over.
-![](BoardGame-Project6-OC/Screen/img.png "Screen shot of the game.")
+![](https://github.com/niyogakiza/Openclassroom-Project6/tree/master/BoardGameProject8-OC/img "Screen shot of the game.")
