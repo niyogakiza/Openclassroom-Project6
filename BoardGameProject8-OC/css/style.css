@@ -1,5 +1,5 @@
 body{
-    background-color: lightgoldenrodyellow;
+    background-color:  rgba(188, 107, 255, 0.02);
     margin: auto;
 }
 
@@ -7,13 +7,21 @@ body{
     width: 45%;
     height: 90%;
 
+
 }
-#block_page{
+#main{
+    top:40%;
+    margin-bottom: 0;
     height: 100%;
     display: -webkit-flex;
     -webkit-align-content: center;
     display: flex;
     align-items: center;
+    box-shadow:
+            0 0 0 20px hsl(0, 0%, 70%),
+            0 0 0 25px hsl(0, 0%, 80%),
+            0 0 0 30px hsl(0, 0%, 90%),
+            0 0 0 30px hsl(0, 0%, 90%);
 }
 table{
     margin: 0 auto auto;
@@ -23,7 +31,11 @@ table{
 #boardGame{
     width: 90%;
     height: 100%;
-    background-color: coral ;
+    background-color: moccasin;
+    box-shadow:
+            0 0 0 10px hsl(0, 0%, 80%),
+            0 0 0 15px hsl(0, 0%, 90%);
+
 }
 #boardGame tr {
     width: 100%;
@@ -31,14 +43,18 @@ table{
 }
 #boardGame tr td{
     width: 10%;
-    border: 4px solid grey;
+    border: 1px solid coral;
+    border-radius: 50%;
 }
 .wrapper{
-    background-color: gainsboro;
     font-weight: lighter;
-    font-size: 26px;
-    font-family: 'Creepster', cursive;
-    border: 15px solid darkgoldenrod;
+    font-size: 20px;
+    font-family: "", cursive;
+    padding: 5px;
+    box-shadow:
+            0 0 0 20px hsl(0, 0%, 70%),
+            0 0 0 25px hsl(0, 0%, 80%),
+            0 0 0 30px hsl(0, 0%, 90%);
 }
 h3{
     text-align: center;
@@ -51,14 +67,24 @@ h3{
 }
 #warrior1Div{
     background: aqua;
-    height: 25%;
+    height: 20%;
     width: 50%;
-    margin-bottom: 40%;
+    margin-bottom: 30%;
+    padding: 1px;
+    box-shadow:
+            0 0 0 10px hsl(0, 0%, 80%),
+            0 0 0 15px hsl(0, 0%, 90%);
+
 }
 #warrior2Div{
     background: coral;
-    height: 25%;
+    height: 20%;
     width: 50%;
+    padding: 1px;
+    box-shadow:
+            0 0 0 10px hsl(0, 0%, 80%),
+            0 0 0 15px hsl(0, 0%, 90%);
+
 }
 
 .inaccessible{
@@ -79,19 +105,49 @@ h3{
 
 label{
     color: black;
-    font-weight: bold;
+    font-weight: lighter;
+    padding: 5px;
 
 }
-.permission{
-    box-shadow: -3px -3px 5px black;
-    -webkit-box-shadow: -3px -3px 5px black;
-    -moz-box-shadow: -3px -3px 5px black;
-    -o-box-shadow: -3px -3px 5px black;
-    -ms-box-shadow:-3px -3px 5px black;;
+.permission {
+
+    -moz-box:    inset 0 0 5px darkgreen;
+    -webkit-box: inset 0 0 5px darkgreen;
+    box-shadow:  inset 0 0 5px darkgreen;
+
 }
 .on{
     border: 15px solid lawngreen;
 }
 .off{
     border: 15px solid red;
+}
+.swal-modal {
+    background-color: #F0E1A1;
+    border: 3px solid white;
+}
+.swal-overlay {
+    background-color: rgba(43, 165, 137, 0.45);
+}
+.swal-title {
+    font-size: 16px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.21);
+    margin: 0px 0px 28px;
+}
+.swal-text {
+    background-color: #FEFAE3;
+    padding: 17px;
+    border: 1px solid #F0E1A1;
+    display: block;
+    margin: 22px;
+    text-align: center;
+    color: #61534e;
+}
+.swal-button {
+    padding: 7px 19px;
+    border-radius: 2px;
+    background-color: #eb7e0d;
+    font-size: 12px;
+    border: 1px solid #3e549a;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.9);
 }
