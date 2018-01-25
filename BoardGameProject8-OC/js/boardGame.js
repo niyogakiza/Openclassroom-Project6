@@ -437,8 +437,8 @@
 
             loser.guard = swal( {
                 title:`Player ${loser.name}`,
-                text:` Attack or  Defend your self? \n OK: Defend  \n CANCEL: Attack`,
-                buttons: ["Cancel", "OK"],
+                text:` Attack or  Defend your self?`,
+                buttons: ["Attack", "Defend"],
 
             });
             endOfFight(loser);
