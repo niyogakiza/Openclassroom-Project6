@@ -35,14 +35,14 @@
         content: "input",
 
     });
-    //prompt('Enter the name of the first player');
+    
     const message2 = await swal({
         title:"Enter  the name of the second player",
         content: "input",
 
     });
 
-    //prompt('Enter  the name of the second player');
+
 
     player1 = new Warrior( message1, 'sword', 100, 'infoPlayer1', 0,'warrior1Div','warrior1', false );
 
@@ -79,7 +79,7 @@
         deployment = Math.floor(Math.random() * cellsNum) + 1;
         if (stoneControl[deployment]) {
             i--;
-            //continue;
+          
 
         } else {
             document.getElementById(deployment).className = "inaccessible";
